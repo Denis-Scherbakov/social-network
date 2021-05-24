@@ -1,11 +1,10 @@
 import {
   StyledProfileInfoSection,
   StyledProfilePhoto,
-  StyledProfileData,
   ProfilePhotoWrapper,
-  ProfileDataWrapper,
-  StyledProfileDataName,
-  StyledProfileDataStatus,
+  ProfileStatusWrapper,
+  StyledProfileName,
+  StyledProfileStatus,
 } from "../styles";
 
 export const ProfileInfo = () => {
@@ -17,12 +16,10 @@ export const ProfileInfo = () => {
           alt="profile-photo"
         ></StyledProfilePhoto>
       </ProfilePhotoWrapper>
-      <ProfileDataWrapper>
-        <StyledProfileData>
-          <StyledProfileDataName>Светлана Иванова</StyledProfileDataName>
-          <StyledProfileDataStatus>Тут будет статус</StyledProfileDataStatus>
-        </StyledProfileData>
-      </ProfileDataWrapper>
+      <ProfileStatusWrapper>
+        <StyledProfileName>Светлана Иванова</StyledProfileName>
+        <StyledProfileStatus>Тут будет статус</StyledProfileStatus>
+      </ProfileStatusWrapper>
     </StyledProfileInfoSection>
   );
 };

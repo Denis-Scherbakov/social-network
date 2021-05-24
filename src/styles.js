@@ -46,22 +46,54 @@ export const StyledProfilePhoto = styled.img`
   background-size: cover;
 `;
 
-export const ProfileDataWrapper = styled.div`
+export const ProfileStatusWrapper = styled.div`
   margin-left: 10px;
   width: 400px;
   background-color: white;
   border-radius: 2%;
 `;
 
-export const StyledProfileData = styled.div``;
-
-export const StyledProfileDataName = styled.h2`
+export const StyledProfileName = styled.h2`
   margin: 10px;
 `;
 
-export const StyledProfileDataStatus = styled.p`
+export const StyledProfileStatus = styled.p`
   ::after {
     content: " 🦄";
   }
+  margin: 10px;
+`;
+
+export const ProfileCommentsInputWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  min-height: 50px;
+  max-width: 650px;
+  background-color: white;
+`;
+
+export const StyledProfileInput = styled.input`
+  margin: 10px;
+  min-width: 500px;
+  min-height: 25px;
+  border: none;
+`;
+
+export const StyledProfileInputButton = styled.button`
+  max-height: 50px;
+  max-width: 80px;
+`;
+
+export const ProfileCommentWrapper = styled.div`
+  margin-top: 10px;
+  max-width: 650 px;
+  min-height: 50px;
+  background-color: white;
+`;
+
+export const StyledProfileComment = styled.span`
+  display: inline-block;
   margin: 10px;
 `;

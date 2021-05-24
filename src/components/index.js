@@ -1,12 +1,16 @@
 import { NavigationMenu } from "./navigationMenu";
 import { ProfilePage } from "./profilePage";
 import { MainPageWrapper } from "../styles";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 export const MainPage = () => {
   return (
-    <MainPageWrapper>
-      <NavigationMenu />
-      <ProfilePage />
-    </MainPageWrapper>
+    <Provider store={store}>
+      <MainPageWrapper>
+        <NavigationMenu />
+        <ProfilePage />
+      </MainPageWrapper>
+    </Provider>
   );
 };
